@@ -62,7 +62,7 @@ hr {
  left: 15px;  
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     body {
         font-size: 12px;
         background-color: #000000;
