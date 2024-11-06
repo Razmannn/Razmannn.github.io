@@ -100,8 +100,48 @@
     </center>
             
     
+    <center><h2>Dime que te pareció.</h2></center>
     
-    
-    
+    <form id="commentForm">
+        <input type="text" id="username" placeholder="Tu nombre" required><br><br>
+        <textarea id="commentText" placeholder="Escribe tu comentario" required></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Sección para mostrar los comentarios -->
+    <div id="commentsSection">
+        <h2>Comentarios</h2>
+        <div id="commentsList"></div>
+    </div>
+
+    <script>
+        // Función para agregar un nuevo comentario a la lista
+        function addComment(username, commentText) {
+            const commentsList = document.getElementById('commentsList');
+            
+            // Crear un nuevo elemento de comentario
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.innerHTML = `<h4>${username}</h4><p>${commentText}</p>`;
+            
+            // Agregar el nuevo comentario a la lista
+            commentsList.appendChild(commentElement);
+        }
+
+        // Manejar el envío del formulario de comentarios
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            
+            // Obtener los valores del formulario
+            const username = document.getElementById('username').value;
+            const commentText = document.getElementById('commentText').value;
+            
+            // Agregar el comentario a la lista en la página
+            addComment(username, commentText);
+            
+            // Limpiar el formulario
+            document.getElementById('commentForm').reset();
+        });
+    </script>
     </body>
 </html>
