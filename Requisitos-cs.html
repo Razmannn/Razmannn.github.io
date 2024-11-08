@@ -24,7 +24,7 @@
     </header>    
     <center>
         <li>
-            <h1>
+            <h2>
                 <b>
                     <i> 
                     Requisitos mínimos:
@@ -48,77 +48,10 @@
                     OS:   Windows XP    
                     </i>
                 </b>
-            </h1>
+            </h2>
         </li>
     </center>    
     <div class="lineaheaderr"></div>    
-    <style>
-        .calculator {
-            display: inline-block;
-            padding: 10px;
-            border: 5px solid #ffffff;
-            border-radius: 5px;
-        }
 
-        .calculator input {
-            width: 100%;
-            height: 60px;
-            margin-bottom: 10px;
-            text-align: right;
-            font-size: 18px;
-            padding-right: 10px;
-            box-sizing: border-box;
-        }
-
-        .calculator button {
-            width: 23%;
-            height: 40px;
-            font-size: 18px;
-            margin: 1%;
-        }
-    </style>
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-        <br>
-        <button onclick="appendNumber('1')">1</button>
-        <button onclick="appendNumber('2')">2</button>
-        <button onclick="appendNumber('3')">3</button>
-        <button onclick="appendOperator('+')">+</button>
-        <br>
-        <button onclick="appendNumber('4')">4</button>
-        <button onclick="appendNumber('5')">5</button>
-        <button onclick="appendNumber('6')">6</button>
-        <button onclick="appendOperator('-')">-</button>
-        <br>
-        <button onclick="appendNumber('7')">7</button>
-        <button onclick="appendNumber('8')">8</button>
-        <button onclick="appendNumber('9')">9</button>
-        <button onclick="appendOperator('*')">*</button>
-        <br>
-        <button onclick="clearDisplay()">Clear</button>
-        <button onclick="appendNumber('0')">0 </button>
-        <button onclick="calculate()">=</button>
-        <button onclick="appendOperator('/')">/</button>
-    </div>
-
-    <script>
-        function appendNumber(number) {
-            document.getElementById('display').value += number;
-        }
-
-        function appendOperator(operator) {
-            document.getElementById('display').value += operator;
-        }
-
-        function clearDisplay() {
-            document.getElementById('display').value = '';
-        }
-
-        function calculate() {
-            let display = document.getElementById('display');
-            console.log(display)
-            display.value = eval(display.value);
-        } 
-    </script>
 </body>
 </html>
