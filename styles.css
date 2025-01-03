@@ -187,7 +187,7 @@ color: white;
 
 .linea-vertical {
     width: 2px;
-    height: 814px;
+    height: 808px;
     background-color: rgb(255, 255, 255); /* Color de la línea */
     position: absolute; /* Posiciona la línea sin que se mueva con el scroll */
     top: 0;
