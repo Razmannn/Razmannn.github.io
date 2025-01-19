@@ -276,7 +276,7 @@ position: relative;
 
   .lineaheaderxdd {
     position: relative;
-    margin-top: -2980px; /* Mueve la línea 20px hacia abajo */;
+    margin-top: -2820px; /* Mueve la línea 20px hacia abajo */;
     height: 3px; /* Altura de la línea */
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     border: none; 
